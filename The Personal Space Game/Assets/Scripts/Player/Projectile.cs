@@ -16,9 +16,12 @@ public class Projectile : MonoBehaviour
         }
         if (other.transform.tag == "Enemy")
         {
-            other.gameObject.GetComponent<Enemy>().HP--;
+            if(other.GetComponent<Enemy>().HP > 0)
+                other.gameObject.GetComponent<Enemy>().HP--;
+
             Instantiate(hitEFX, transform.position
                               , Quaternion.identity);
+
             Destroy(gameObject);
         }
     }

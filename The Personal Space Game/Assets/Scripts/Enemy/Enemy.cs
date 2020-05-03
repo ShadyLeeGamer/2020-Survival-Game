@@ -19,13 +19,13 @@ public class Enemy : MonoBehaviour
     public Transform quitPos;
     Transform target;
 
-    Player player;
-
+    public Animator animator;
+    
     Rigidbody2D rb;
 
-    public Animator animator;
+    Player player;
 
-    public float closeDistance = 5;
+    public Color enemyQuitCol;
 
     void Start()
     {
@@ -46,6 +46,7 @@ public class Enemy : MonoBehaviour
             stopDist = 0;
             moveSpeed = moveSpeedQ;
             target = quitPos;
+            gameObject.GetComponent<SpriteRenderer>().color = enemyQuitCol;
 
             //Quit();
         }
