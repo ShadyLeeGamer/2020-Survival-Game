@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public int currentScore;
 
+    public Transform playerGUI;
+
     public TextMesh HPCounterIn;
     public TextMesh HPCounterOut;
 
@@ -21,12 +23,13 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        HPCounterIn.transform.position = new Vector2(player.transform.position.x + offset.x, 
-                                                     player.transform.position.y + offset.y);
-        HPCounterOut.transform.position = new Vector2(player.transform.position.x + offset.x,
-                                                      player.transform.position.y + offset.y);
+        if (player != null)
+        {
+            playerGUI.position = new Vector2(player.transform.position.x + offset.x,
+                                             player.transform.position.y + offset.y);
 
-        HPCounterIn.text = "" + player.HP;
-        HPCounterOut.text = "" + player.HP;
+            HPCounterIn.text = "" + player.HP;
+            HPCounterOut.text = "" + player.HP;
+        }
     }
 }

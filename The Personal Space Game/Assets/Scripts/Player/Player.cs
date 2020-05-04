@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public bool shrink;
     public bool isGrounded;
     public bool isFalling;
-    public bool isFiring;
 
     public int jumpCount;
     public int HP;
@@ -33,18 +32,17 @@ public class Player : MonoBehaviour
     public Transform groundCheck;
     public Transform[] firePoint;
 
-    Rigidbody2D rb;
-
     public Animator animator;
+
+    Rigidbody2D rb;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
-        shrink = true;
+        rb = GetComponent<Rigidbody2D>();
 
         jumpCount = 1;
+
         minSpace_ = minSpace;
         maxSpace_ = maxSpace;
 
@@ -53,60 +51,14 @@ public class Player : MonoBehaviour
     
     void Update()
     {
+        Jump();
+
+        Shoot();
+
+        PersonalSpace();
+
         if (HP <= 0)
             Destroy(gameObject);
-
-        if (Input.GetButtonDown("Jump") && isGrounded && jumpCount > 0)
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            isGrounded = false;
-        }
-
-        if (Input.GetKey(KeyCode.P))
-        {
-            isFiring = true;
-            if (Time.time >= nextTimeToFire)
-                    Shoot();
-        }
-        else
-            isFiring = false;
-
-        if (noSpace)
-        {
-            dangerSpace.SetActive(true);
-
-            if (personalSpace.localScale.x < minSpace)
-                shrink = false;
-            else if (personalSpace.localScale.x == maxSpace)
-                shrink = true;
-        }
-        else
-        {
-            dangerSpace.SetActive(false);
-            shrink = false;
-        }
-
-        if(shrink == true)
-            personalSpace.localScale = new Vector2(maxSpace_ -= shrinkSpeed * Time.deltaTime,
-                                                   maxSpace_ -= shrinkSpeed * Time.deltaTime);
-        else
-            personalSpace.localScale = new Vector3(minSpace_ += growSpeed * Time.deltaTime,
-                                                   minSpace_ += growSpeed * Time.deltaTime);
-
-        if (personalSpace.localScale.x <= minSpace)
-        {
-            personalSpace.localScale = new Vector2(minSpace, minSpace);
-            minSpace_ = minSpace;
-            HP--;
-            shrink = false;
-        }
-
-        if (personalSpace.localScale.x >= maxSpace)
-        {
-            personalSpace.localScale = new Vector2(maxSpace, maxSpace);
-            maxSpace_ = maxSpace;
-
-        }
     }
 
     void FixedUpdate()
@@ -160,27 +112,81 @@ public class Player : MonoBehaviour
             animator.SetBool("Falling", false);
             animator.SetBool("Jumping", false);
         }
-
-        if (isFiring)
-            animator.SetBool("Shooting", true);
-        else
-            animator.SetBool("Shooting", false);
-
     }
+
+    void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && isGrounded && jumpCount > 0)
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            isGrounded = false;
+        }
+    }
+
 
     void Shoot()
     {
-        GameObject bullet_ = Instantiate(projectile, currnetFirePoint.position
-                                                           , Quaternion.identity);
+        if (Input.GetKey(KeyCode.P))
+        {
+            animator.SetBool("Shooting", true);
 
-        Rigidbody2D bulletRB = bullet_.GetComponent<Rigidbody2D>();
+            if (Time.time >= nextTimeToFire)
+            {
+                GameObject bullet_ = Instantiate(projectile, currnetFirePoint.position
+                                                   , Quaternion.identity);
 
-        nextTimeToFire = Time.time + 1f / fireRate;
+                Rigidbody2D bulletRB = bullet_.GetComponent<Rigidbody2D>();
 
-        bullet_.transform.position = currnetFirePoint.position
-                                   + currnetFirePoint.transform.forward;
+                nextTimeToFire = Time.time + 1f / fireRate;
 
-        bulletRB.velocity = currnetFirePoint.transform.right
-                          * projectileSpeed;
+                bullet_.transform.position = currnetFirePoint.position
+                                           + currnetFirePoint.transform.forward;
+
+                bulletRB.velocity = currnetFirePoint.transform.right
+                                  * projectileSpeed;
+            }
+        }
+        else
+            animator.SetBool("Shooting", false);
+    }
+
+    void PersonalSpace()
+    {
+        if (noSpace)
+        {
+            dangerSpace.SetActive(true);
+
+            if (personalSpace.localScale.x < minSpace)
+                shrink = false;
+            else if (personalSpace.localScale.x == maxSpace)
+                shrink = true;
+        }
+        else
+        {
+            dangerSpace.SetActive(false);
+            shrink = false;
+        }
+
+        if (shrink == true)
+            personalSpace.localScale = new Vector2(maxSpace_ -= shrinkSpeed * Time.deltaTime,
+                                                   maxSpace_ -= shrinkSpeed * Time.deltaTime);
+        else
+            personalSpace.localScale = new Vector3(minSpace_ += growSpeed * Time.deltaTime,
+                                                   minSpace_ += growSpeed * Time.deltaTime);
+
+        if (personalSpace.localScale.x <= minSpace)
+        {
+            personalSpace.localScale = new Vector2(minSpace, minSpace);
+            minSpace_ = minSpace;
+            HP--;
+            shrink = false;
+        }
+
+        if (personalSpace.localScale.x >= maxSpace)
+        {
+            personalSpace.localScale = new Vector2(maxSpace, maxSpace);
+            maxSpace_ = maxSpace;
+
+        }
     }
 }

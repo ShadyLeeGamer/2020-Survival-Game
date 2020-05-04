@@ -39,36 +39,22 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (HP > 0)
+        Movement();
+
+        Jump();
+
+        if (HP > 0 && player != null)
             target = player.transform;
         else
         {
             stopDist = 0;
             moveSpeed = moveSpeedQ;
             target = quitPos;
-            gameObject.GetComponent<SpriteRenderer>().color = enemyQuitCol;
+
+            if(player != null)
+                gameObject.GetComponent<SpriteRenderer>().color = enemyQuitCol;
 
             //Quit();
-        }
-
-        if (Vector2.Distance(transform.position, target.position) > stopDist)
-        {
-            transform.position = Vector2.MoveTowards(transform.position,
-                             new Vector2(target.position.x, transform.position.y),
-                             moveSpeed * Time.deltaTime);
-
-            animator.SetFloat("Movement", 1);
-        }
-
-        else
-            animator.SetFloat("Movement", -1);
-
-        if (target.position.y > transform.position.y + jumpPos && isGrounded
-                                                               && Vector2.Distance(transform.position, target.position) < jumpDist
-                                                               && jumpCount > 0)
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            isGrounded = false;
         }
 
         if (target.position.x > transform.position.x)
@@ -98,10 +84,37 @@ public class Enemy : MonoBehaviour
 
         }
     }
+    
+    void Movement()
+    {
+        if (Vector2.Distance(transform.position, target.position) > stopDist)
+        {
+            transform.position = Vector2.MoveTowards(transform.position,
+                             new Vector2(target.position.x, transform.position.y),
+                             moveSpeed * Time.deltaTime);
+
+            animator.SetFloat("Movement", 1);
+        }
+        else
+            animator.SetFloat("Movement", -1);
+
+    }
+
+    void Jump()
+    {
+        if (target.position.y > transform.position.y + jumpPos && isGrounded
+                                                               && Vector2.Distance(transform.position, target.position) < jumpDist
+                                                               && jumpCount > 0)
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            isGrounded = false;
+        }
+
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "QuitPosition" && HP < 1)
+        if (other.tag == "QuitPosition" && HP < 1 || other.tag == "QuitPosition" && player == null)
             Destroy(gameObject);
     }
 

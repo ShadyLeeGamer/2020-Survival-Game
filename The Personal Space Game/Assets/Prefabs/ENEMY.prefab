@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGrounded: 0
   jumpCount: 1
-  HP: 3
+  HP: 2
   moveSpeed: 5
   moveSpeedQ: 7
   jumpForce: 4

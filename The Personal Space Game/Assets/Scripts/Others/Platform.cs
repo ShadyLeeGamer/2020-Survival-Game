@@ -12,15 +12,11 @@ public class Platform : MonoBehaviour
     public Collider2D playerCollider;
     public Collider2D enemyCollider;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         player = FindObjectOfType<Player>();
         enemy = FindObjectOfType<Enemy>();
+
         if (player != null)
         {
             if (player.transform.position.y > transform.position.y + activatePos)

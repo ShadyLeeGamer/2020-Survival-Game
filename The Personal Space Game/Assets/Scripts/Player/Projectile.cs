@@ -14,10 +14,10 @@ public class Projectile : MonoBehaviour
                               , Quaternion.identity);
             Destroy(gameObject);
         }
-        if (other.transform.tag == "Enemy")
+
+        if (other.transform.tag == "Enemy" && other.GetComponent<Enemy>().HP > 0)
         {
-            if(other.GetComponent<Enemy>().HP > 0)
-                other.gameObject.GetComponent<Enemy>().HP--;
+            other.gameObject.GetComponent<Enemy>().HP--;
 
             Instantiate(hitEFX, transform.position
                               , Quaternion.identity);
