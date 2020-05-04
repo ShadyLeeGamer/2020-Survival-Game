@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     public float jumpPos;
 
     public Transform quitPos;
-    Transform target;
+    public Transform target;
 
     public Animator animator;
     
@@ -39,10 +39,6 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        Movement();
-
-        Jump();
-
         if (HP > 0 && player != null)
             target = player.transform;
         else
@@ -61,6 +57,10 @@ public class Enemy : MonoBehaviour
             transform.eulerAngles = new Vector2(0, 0);
         else
             transform.eulerAngles = new Vector2(0, 180);
+
+        Movement();
+
+        Jump();
 
         if (!isGrounded)
         {

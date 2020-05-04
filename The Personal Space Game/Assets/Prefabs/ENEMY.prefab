@@ -53,12 +53,13 @@ MonoBehaviour:
   jumpCount: 1
   HP: 2
   moveSpeed: 5
-  moveSpeedQ: 7
+  moveSpeedQ: 10
   jumpForce: 4
   stopDist: 1
   jumpDist: 5
   jumpPos: 1
   quitPos: {fileID: 0}
+  target: {fileID: 0}
   animator: {fileID: 0}
   enemyQuitCol: {r: 0, g: 1, b: 0.8666667, a: 1}
 --- !u!61 &4194843554517478966
