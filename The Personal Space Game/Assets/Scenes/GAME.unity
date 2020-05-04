@@ -2490,7 +2490,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134495175}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4d706dd085d28f4cb7c27282e2289b7, type: 3}
   m_Name: 
@@ -3216,7 +3216,7 @@ MonoBehaviour:
   HP: 9
   projectileSpeed: 30
   jumpForce: 17.5
-  fireRate: 6.69
+  fireRate: 3
   speed: 10
   shrinkSpeed: 2
   growSpeed: 4
