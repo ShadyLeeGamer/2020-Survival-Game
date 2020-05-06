@@ -8,9 +8,10 @@ public class Player : MonoBehaviour
     public bool shrink;
     public bool isGrounded;
     public bool isFalling;
+    public bool isHit;
 
     public int jumpCount;
-    public int HP;
+    public float HP;
 
     public float projectileSpeed;
     public float jumpForce;
@@ -18,16 +19,19 @@ public class Player : MonoBehaviour
     public float speed;
     public float shrinkSpeed;
     public float growSpeed;
+    public float[] space;
+    public int currentSpace;
     public float minSpace;
     public float maxSpace;
-    float minSpace_;
-    float maxSpace_;
+    public float minSpace_;
+    public float maxSpace_;
     float nextTimeToFire;
 
     public GameObject projectile;
     public GameObject dangerSpace;
+    public GameObject personalSpace;
 
-    public Transform personalSpace;
+    public Transform safeSpace;
     public Transform currnetFirePoint;
     public Transform groundCheck;
     public Transform[] firePoint;
@@ -36,17 +40,26 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rb;
 
+    public Vector2 knockback;
+    public Vector2 currentKnockback;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
         jumpCount = 1;
+        currentSpace = space.Length - 1;
+        maxSpace = space[currentSpace];
 
         minSpace_ = minSpace;
         maxSpace_ = maxSpace;
 
-        personalSpace.localScale = new Vector2(minSpace, minSpace);
+        HP = space.Length;
+
+        safeSpace.localScale = new Vector2(minSpace, minSpace);
+
+        currentKnockback = new Vector2(-knockback.x, knockback.y);
     }
     
     void Update()
@@ -56,6 +69,11 @@ public class Player : MonoBehaviour
         Shoot();
 
         PersonalSpace();
+
+        dangerSpace.transform.localScale = new Vector2(space[currentSpace],
+                                                       space[currentSpace]);
+
+        personalSpace.GetComponent<CircleCollider2D>().radius = space[currentSpace] / 2;
 
         if (HP <= 0)
             Destroy(gameObject);
@@ -71,12 +89,17 @@ public class Player : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
 
         Vector2 move = new Vector3(x * speed, rb.velocity.y);
-        rb.velocity = move;
 
         if (x > 0)
+        {
             transform.eulerAngles = new Vector2(0, 0);
+            currentKnockback.x = -knockback.x;
+        }
         if (x < 0)
+        {
             transform.eulerAngles = new Vector2(0, 180);
+            currentKnockback.x = knockback.x;
+        }
         if (x == 0)
         {
             currnetFirePoint = firePoint[0];
@@ -112,15 +135,22 @@ public class Player : MonoBehaviour
             animator.SetBool("Falling", false);
             animator.SetBool("Jumping", false);
         }
+
+        if (!isHit)
+            rb.velocity = move;
+        else
+        {
+            rb.velocity = new Vector2(currentKnockback.x, currentKnockback.y);
+
+            if (!isGrounded)
+                isHit = false;
+        }
     }
 
     void Jump()
     {
         if (Input.GetButtonDown("Jump") && isGrounded && jumpCount > 0)
-        {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            isGrounded = false;
-        }
     }
 
 
@@ -156,9 +186,21 @@ public class Player : MonoBehaviour
         {
             dangerSpace.SetActive(true);
 
-            if (personalSpace.localScale.x < minSpace)
+            if (safeSpace.localScale.x <= minSpace)
+            {
+                isHit = true;
+
+                minSpace_ = minSpace;
+                HP--;
+
+                safeSpace.localScale = new Vector2(minSpace, minSpace);
+
+                if (currentSpace > 0)
+                    maxSpace = space[currentSpace -= 1];
+                
                 shrink = false;
-            else if (personalSpace.localScale.x == maxSpace)
+            }
+            else if (safeSpace.localScale.x == maxSpace)
                 shrink = true;
         }
         else
@@ -168,23 +210,15 @@ public class Player : MonoBehaviour
         }
 
         if (shrink == true)
-            personalSpace.localScale = new Vector2(maxSpace_ -= shrinkSpeed * Time.deltaTime,
-                                                   maxSpace_ -= shrinkSpeed * Time.deltaTime);
+            safeSpace.localScale = new Vector2(maxSpace_ -= shrinkSpeed * Time.deltaTime,
+                                               maxSpace_ -= shrinkSpeed * Time.deltaTime);
         else
-            personalSpace.localScale = new Vector3(minSpace_ += growSpeed * Time.deltaTime,
-                                                   minSpace_ += growSpeed * Time.deltaTime);
+            safeSpace.localScale = new Vector3(minSpace_ += growSpeed * Time.deltaTime,
+                                               minSpace_ += growSpeed * Time.deltaTime);
 
-        if (personalSpace.localScale.x <= minSpace)
+        if (safeSpace.localScale.x >= maxSpace)
         {
-            personalSpace.localScale = new Vector2(minSpace, minSpace);
-            minSpace_ = minSpace;
-            HP--;
-            shrink = false;
-        }
-
-        if (personalSpace.localScale.x >= maxSpace)
-        {
-            personalSpace.localScale = new Vector2(maxSpace, maxSpace);
+            safeSpace.localScale = new Vector2(maxSpace, maxSpace);
             maxSpace_ = maxSpace;
 
         }

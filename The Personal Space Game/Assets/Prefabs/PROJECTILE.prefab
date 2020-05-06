@@ -181,7 +181,6 @@ MonoBehaviour:
   hitEFX: {fileID: 8574568668718055786, guid: 55fc338aed10113449998f24c4426c80, type: 3}
   splatSFX: {fileID: 8300000, guid: efc6c5c33f66d3d4da5643ddb7058665, type: 3}
   hitSFX: {fileID: 8300000, guid: 268dbb8476cf437439d0c1a880d30dc6, type: 3}
-  audioSource: {fileID: -6369629506440541722}
 --- !u!114 &-3308164362463008453
 MonoBehaviour:
   m_ObjectHideFlags: 0

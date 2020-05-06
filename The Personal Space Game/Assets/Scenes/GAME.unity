@@ -736,7 +736,7 @@ Transform:
   m_GameObject: {fileID: 375280945}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 1946773610}
   m_RootOrder: 0
@@ -2490,7 +2490,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134495175}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4d706dd085d28f4cb7c27282e2289b7, type: 3}
   m_Name: 
@@ -3212,20 +3212,29 @@ MonoBehaviour:
   shrink: 0
   isGrounded: 0
   isFalling: 0
+  isHit: 0
   jumpCount: 0
-  HP: 9
+  HP: 0
   projectileSpeed: 30
   jumpForce: 17.5
   fireRate: 3
   speed: 10
   shrinkSpeed: 2
   growSpeed: 4
+  space:
+  - 3
+  - 4
+  - 5
+  currentSpace: 0
   minSpace: 0
-  maxSpace: 5
+  maxSpace: 0
+  minSpace_: 0
+  maxSpace_: 0
   projectile: {fileID: 8798435322922216404, guid: e516f8206ad843045b982237eb79f7c2,
     type: 3}
   dangerSpace: {fileID: 1181426002}
-  personalSpace: {fileID: 375280946}
+  personalSpace: {fileID: 1946773609}
+  safeSpace: {fileID: 375280946}
   currnetFirePoint: {fileID: 0}
   groundCheck: {fileID: 254440821}
   firePoint:
@@ -3233,6 +3242,8 @@ MonoBehaviour:
   - {fileID: 1430810943}
   - {fileID: 556083585}
   animator: {fileID: 0}
+  knockback: {x: 20, y: 7}
+  currentKnockback: {x: 0, y: 0}
 --- !u!95 &1520851798
 Animator:
   serializedVersion: 3
