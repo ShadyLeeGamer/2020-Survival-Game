@@ -11,8 +11,9 @@ public class Player : MonoBehaviour
     public bool isFalling;
     public bool isHit;
 
+    public int currentSpace;
     public int jumpCount;
-    public float HP;
+    public int HP;
 
     public float projectileSpeed;
     public float jumpForce;
@@ -21,7 +22,7 @@ public class Player : MonoBehaviour
     public float shrinkSpeed;
     public float growSpeed;
     public float[] space;
-    public int currentSpace;
+
     public float minSpace;
     public float maxSpace;
     public float minSpace_;
@@ -58,14 +59,11 @@ public class Player : MonoBehaviour
 
         personalSpace = FindObjectOfType<PersonalSpace>();
 
+        HP = space.Length;
         jumpCount = 1;
-        currentSpace = space.Length - 1;
-        maxSpace = space[currentSpace];
 
         minSpace_ = minSpace;
         maxSpace_ = maxSpace;
-
-        HP = space.Length;
 
         outline.SetFloat("_Thickness", 0);
         outline.SetColor("_Color", personalSpace.safeSpaceColB);
@@ -77,6 +75,10 @@ public class Player : MonoBehaviour
     
     void Update()
     {
+
+        currentSpace = HP - 1;
+        maxSpace = space[currentSpace];
+
         Jump();
 
         Shoot();
