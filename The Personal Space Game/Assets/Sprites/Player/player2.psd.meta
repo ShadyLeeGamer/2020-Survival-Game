@@ -1,0 +1,473 @@
+fileFormatVersion: 2
+guid: c4d84bd6f37c6c243ba74a1b85fde5eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -889739676950766307
+    second: player2idle1
+  - first:
+      213: -5998797548565674896
+    second: player2idle2
+  - first:
+      213: -1378952643527606749
+    second: player2idleshoot
+  - first:
+      213: -4548619987466084867
+    second: player2_3
+  - first:
+      213: 367922085793247325
+    second: player2run1
+  - first:
+      213: 4943878998075734855
+    second: player2run2
+  - first:
+      213: -3468935974318548327
+    second: player2run3
+  - first:
+      213: 4126348674810730549
+    second: player2runshoot1
+  - first:
+      213: 6556036002550477696
+    second: player2runshoot2
+  - first:
+      213: -2892259819399945209
+    second: player2runshoot3
+  - first:
+      213: -6537964876022042883
+    second: player2jump
+  - first:
+      213: -9147709555297050621
+    second: player2fall
+  - first:
+      213: 3243715667363599213
+    second: player2jumpshoot
+  - first:
+      213: 3413300023299412829
+    second: player2fallshoot
+  - first:
+      213: 8136397992615165253
+    second: player2idle1
+  - first:
+      213: -5597344295212063280
+    second: player2idle2
+  - first:
+      213: 5545104811225023935
+    second: player2idleshoot
+  - first:
+      213: -8463246808347924951
+    second: player2_3
+  - first:
+      213: 869892496664633353
+    second: player2run1
+  - first:
+      213: 4497201476582022487
+    second: player2run2
+  - first:
+      213: -6747330945342117194
+    second: player2run3
+  - first:
+      213: -6949106148987269833
+    second: player2runshoot1
+  - first:
+      213: -326114075973371934
+    second: player2runshoot2
+  - first:
+      213: -7545810474739127503
+    second: player2runshoot3
+  - first:
+      213: 6889907708131761631
+    second: player2jump
+  - first:
+      213: 6746618214617529814
+    second: player2fall
+  - first:
+      213: -5894853250021674739
+    second: player2jumpshoot
+  - first:
+      213: 1994109233786783108
+    second: player2fallshoot
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 14
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player2idle1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 166
+        width: 22
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d3705adda4ae070800000000000000
+      internalID: 8136397992615165253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2idle2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 166
+        width: 22
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5635ef40d3252b0800000000000000
+      internalID: -5597344295212063280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2idleshoot
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 166
+        width: 21
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb58063527b24fc40800000000000000
+      internalID: 5545104811225023935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2run1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 135
+        width: 25
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9002978ed9a721c00800000000000000
+      internalID: 869892496664633353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2run2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 135
+        width: 22
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d980f6ae4496e30800000000000000
+      internalID: 4497201476582022487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2run3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 135
+        width: 27
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bae1ec014aac52a0800000000000000
+      internalID: -6747330945342117194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2runshoot1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 136
+        width: 23
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d812386c0df8f90800000000000000
+      internalID: -6949106148987269833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2runshoot2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 135
+        width: 20
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e73a59c9f8697bf0800000000000000
+      internalID: -326114075973371934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2runshoot3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 135
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ba0c64a55e74790800000000000000
+      internalID: -7545810474739127503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2jump
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 99
+        width: 27
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd5b666e8edd9f50800000000000000
+      internalID: 6889907708131761631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2fall
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 100
+        width: 27
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd3575658dc0ad50800000000000000
+      internalID: 6746618214617529814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2jumpshoot
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 99
+        width: 21
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01b66d8336413ea0800000000000000
+      internalID: -5894853250021674739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2fallshoot
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 99
+        width: 21
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485003b68cf7cab10800000000000000
+      internalID: 1994109233786783108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,16 +6,16 @@ public class Platform : MonoBehaviour
 {
     public float activatePos;
 
-    Player player;
-    Enemy enemy;
+    GameObject player;
+    GameObject enemy;
 
     public Collider2D playerCollider;
     public Collider2D enemyCollider;
 
     void Update()
     {
-        player = FindObjectOfType<Player>();
-        enemy = FindObjectOfType<Enemy>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        enemy = GameObject.FindGameObjectWithTag("Enemy");
 
         if (player != null)
         {

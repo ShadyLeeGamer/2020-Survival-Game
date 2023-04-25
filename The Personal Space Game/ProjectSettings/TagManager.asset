@@ -8,6 +8,11 @@ TagManager:
   - Enemy
   - Platform
   - QuitPosition
+  - Projectile
+  - EnemyStart
+  - EnemyCORONA
+  - StartPosition
+  - WinPosition
   layers:
   - Default
   - TransparentFX
@@ -19,20 +24,20 @@ TagManager:
   - 
   - Player
   - Enemy
+  - Ground
   - Projectile
   - PlayerPlatform
   - EnemyPlatform
-  - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Menu
+  - QuitLayer
+  - Barrier
+  - Enemy3
+  - Enemy4
+  - ShoppingCart
+  - StartPaper
+  - Enemy2
+  - Enemy5
+  - HugArm
   - 
   - 
   - 

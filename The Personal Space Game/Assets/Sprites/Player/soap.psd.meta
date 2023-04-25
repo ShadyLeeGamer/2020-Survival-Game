@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: 297bafc3ae2b7264980a361c144240e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2749352931902247497
+    second: arm2
+  - first:
+      213: -3198017980222655000
+    second: hand2
+  - first:
+      213: -8764916193386165037
+    second: redsoap
+  - first:
+      213: -7232111490639783199
+    second: yellowsoap1
+  - first:
+      213: 1314851034076124263
+    second: arm1
+  - first:
+      213: 6444392749233367027
+    second: greensoap2
+  - first:
+      213: -5414714857674638499
+    second: redsoap2
+  - first:
+      213: -7778802534559142947
+    second: yellowsoap2
+  - first:
+      213: 1348994612963860872
+    second: bluesoap2
+  - first:
+      213: 4040012837177520224
+    second: hand1
+  - first:
+      213: 4428784951260673124
+    second: greensoapproj
+  - first:
+      213: 8999795582543924272
+    second: redsoapproj
+  - first:
+      213: 3816361672088011447
+    second: yellowsoapproj
+  - first:
+      213: -6166749509310132860
+    second: arm2
+  - first:
+      213: 1174996231298987705
+    second: hand2
+  - first:
+      213: -3268227306489892648
+    second: redsoap
+  - first:
+      213: 980671335180667561
+    second: yellowsoap1
+  - first:
+      213: 5335077055991022443
+    second: arm1
+  - first:
+      213: -192494616493681196
+    second: greensoap2
+  - first:
+      213: 6219162429237687410
+    second: redsoap2
+  - first:
+      213: -6702964748524627802
+    second: yellowsoap2
+  - first:
+      213: 7538791370465627066
+    second: bluesoap2
+  - first:
+      213: 3654612455726285617
+    second: hand1
+  - first:
+      213: 6993147807636144258
+    second: greensoapproj
+  - first:
+      213: 6322607423800389682
+    second: redsoapproj
+  - first:
+      213: 734104755019143128
+    second: yellowsoapproj
+  - first:
+      213: 5800065950605150472
+    second: bluesoapproj
+  - first:
+      213: 74641274855115212
+    second: toiletpaper
+  - first:
+      213: -5694864529137758104
+    second: toiletpaper
+  - first:
+      213: 4152388164041434580
+    second: greensoapgui1
+  - first:
+      213: 1429096134223600447
+    second: bluesoapgui1
+  - first:
+      213: 7773073253746042863
+    second: redsoapgui1
+  - first:
+      213: -5356731377416098285
+    second: yellowsoapgui1
+  - first:
+      213: -4509045683188491595
+    second: greensoapgui2
+  - first:
+      213: -327369852780495910
+    second: bluesoapgui2
+  - first:
+      213: -8853854356251593718
+    second: redsoapgui2
+  - first:
+      213: 1588007673153432127
+    second: yellowsoapgui2
+  - first:
+      213: -6166749509310132860
+    second: greensoap1
+  - first:
+      213: 1174996231298987705
+    second: bluesoap1
+  - first:
+      213: -3268227306489892648
+    second: redsoap1
+  - first:
+      213: 980671335180667561
+    second: yellowsoap1
+  - first:
+      213: 5335077055991022443
+    second: greensoap2
+  - first:
+      213: -192494616493681196
+    second: redsoap2
+  - first:
+      213: 6219162429237687410
+    second: yellowsoap2
+  - first:
+      213: 2749352931902247497
+    second: greensoap1
+  - first:
+      213: -3198017980222655000
+    second: bluesoap1
+  - first:
+      213: -6702964748524627802
+    second: bluesoap2
+  - first:
+      213: 7538791370465627066
+    second: greensoapgui1
+  - first:
+      213: 3654612455726285617
+    second: arm1
+  - first:
+      213: 6993147807636144258
+    second: bluesoapgui1
+  - first:
+      213: 6322607423800389682
+    second: redsoapgui1
+  - first:
+      213: 734104755019143128
+    second: yellowsoapgui1
+  - first:
+      213: -3624027697930512051
+    second: arm2
+  - first:
+      213: 8053547791749934997
+    second: toiletpaper
+  - first:
+      213: 9127554292797619874
+    second: greensoapgui2
+  - first:
+      213: -2502007770539615823
+    second: bluesoapgui2
+  - first:
+      213: 6699179657630802934
+    second: redsoapgui2
+  - first:
+      213: 6032863368004167733
+    second: yellowsoapgui2
+  - first:
+      213: 7452239251758277032
+    second: hand2up
+  - first:
+      213: -1956495492028638225
+    second: hand1up
+  - first:
+      213: -6330459783034788909
+    second: greenproj
+  - first:
+      213: 5917215451677486931
+    second: redproj
+  - first:
+      213: 1952816010019567415
+    second: yellowproj
+  - first:
+      213: 3299059109799406451
+    second: blueproj
+  - first:
+      213: -8764916193386165037
+    second: hand2down
+  - first:
+      213: 980671335180667561
+    second: hand1down
+  - first:
+      213: 5335077055991022443
+    second: yellowsoap1
+  - first:
+      213: 6444392749233367027
+    second: greensoap2
+  - first:
+      213: -192494616493681196
+    second: greensoap2
+  - first:
+      213: 6219162429237687410
+    second: yellowsoap2
+  - first:
+      213: -6702964748524627802
+    second: greensoapgui1
+  - first:
+      213: 7538791370465627066
+    second: upsoapgui1
+  - first:
+      213: 4040012837177520224
+    second: upsoapgui2
+  - first:
+      213: 4428784951260673124
+    second: soap_10
+  - first:
+      213: 6444392749233367027
+    second: greensoap2
+  - first:
+      213: -7232111490639783199
+    second: bluesoap2
+  - first:
+      213: 5335077055991022443
+    second: yellowsoap2
+  - first:
+      213: 6219162429237687410
+    second: yellowsoap1
+  - first:
+      213: 1821957336740205456
+    second: yellowsoap2
+  - first:
+      213: -9209844106460856990
+    second: upsoap1
+  - first:
+      213: 1314851034076124263
+    second: upsoap2
+  - first:
+      213: 6219162429237687410
+    second: upproj
+  - first:
+      213: -6702964748524627802
+    second: yellowsoap1
+  - first:
+      213: 8736189683680027284
+    second: yellowsoap1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 14
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: redsoap1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0307f949ce4a2d0800000000000000
+      internalID: -3268227306489892648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: redsoap2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31
+        width: 5
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d518ba8a2f145df0800000000000000
+      internalID: -192494616493681196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bluesoapgui1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 15
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28044f731e6ac0160800000000000000
+      internalID: 6993147807636144258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: redsoapgui1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230bedd04f96eb750800000000000000
+      internalID: 6322607423800389682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellowsoapgui1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 15
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d757de9260103a00800000000000000
+      internalID: 734104755019143128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greensoap1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 40
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9425634cce9a72620800000000000000
+      internalID: 2749352931902247497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bluesoap1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 40
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5348f379b5e93d0800000000000000
+      internalID: -3198017980222655000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greensoapgui2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5
+        width: 7
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 2055.5557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae3b4af4469bae70800000000000000
+      internalID: 9127554292797619874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bluesoapgui2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 5
+        width: 7
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 2055.5557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b918bb5035174dd0800000000000000
+      internalID: -2502007770539615823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: redsoapgui2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 5
+        width: 7
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 2055.5557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f36b93a76448fc50800000000000000
+      internalID: 6699179657630802934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellowsoapgui2
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 5
+        width: 7
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 2055.5557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538ea5c054909b350800000000000000
+      internalID: 6032863368004167733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greenproj
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 26
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3a0571e50b528a0800000000000000
+      internalID: -6330459783034788909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: redproj
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 26
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f60b04a1c2e1250800000000000000
+      internalID: 5917215451677486931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellowproj
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 26
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73779ec80dbc91b10800000000000000
+      internalID: 1952816010019567415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueproj
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 26
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b2c9cf7cc98cd20800000000000000
+      internalID: 3299059109799406451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greensoap2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 31
+        width: 5
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f76823cf051f6950800000000000000
+      internalID: 6444392749233367027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bluesoap2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 31
+        width: 5
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea1568aae062ab90800000000000000
+      internalID: -7232111490639783199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upproj
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 26
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274fa236747ee4650800000000000000
+      internalID: 6219162429237687410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellowsoap1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 40
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8593633194af2a0800000000000000
+      internalID: -6702964748524627802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellowsoap2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 31
+        width: 5
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093115c6b84e84910800000000000000
+      internalID: 1821957336740205456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsoap1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 40
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dfcadb49f003080800000000000000
+      internalID: -9209844106460856990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsoap2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 31
+        width: 5
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76499a29c0a4f3210800000000000000
+      internalID: 1314851034076124263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsoapgui1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 15
+        width: 7
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb42682fca2f9860800000000000000
+      internalID: 7538791370465627066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsoapgui2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 5
+        width: 7
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 2055.5557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060fbff3542011830800000000000000
+      internalID: 4040012837177520224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greensoapgui1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4922e222b3e2d3970800000000000000
+      internalID: 8736189683680027284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
